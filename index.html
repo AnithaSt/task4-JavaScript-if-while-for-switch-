@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>task4-JavaScript</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  	<style type="text/css">
+  		input{outline: none;}
+  		.input{ width: 60%; }
+  		.images{ background-image: url(img/sunset.jpg);
+  				background-repeat: no-repeat;
+				}
+		.imag{ background-image: url(img/Patt.jpg);
+  				background-repeat: no-repeat;
+			}
+		.imagee{ background-image: url(img/JEF.jpg);
+  				background-repeat: no-repeat;
+				}	
+		.image{ background-image: url(img/wall.jpg);
+  				background-repeat: no-repeat;
+				}		
+			.bgcolor{background-color: #ffcce6}
+  	</style>
+</head>
+<body>
+	<div class="container-fluied bgcolor">
+	<div class=" container images">
+	<div class="container text-white">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 text-center mt-5">
+				<h3>USING IF LOOP</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-2 col-md-2"></div>
+			<div class="col-lg-2 col-md-2 mt-5">
+				<b>User Name:</b>
+			</div>
+			<div class="col-lg-6 col-md-6 mt-5">
+				<input type="text" id="username" class="input">
+			</div>
+			<div class="col-lg-2 col-md-2"></div>
+		</div>
+		<div class="row">
+			<div class="col-lg-2 col-md-2"></div>
+			<div class="col-lg-2 col-md-2 mt-5">
+				<b>Password:</b>
+			</div>
+			<div class="col-lg-6 col-md-6 mt-5">
+				<input type="password" id="Password" class="input">
+			</div>
+			<div class="col-lg-2 col-md-2"></div>
+		</div>
+		<div class="row">
+			<div class="col-lg-2 col-md-2"></div>
+			<div class="col-lg-2 col-md-2 mt-5">
+				<b>Conform Password:</b>
+			</div>
+			<div class="col-lg-6 col-md-6 mt-5">
+				<input type="password" id="ConformPassword" class="input">
+			</div>
+			<div class="col-lg-2 col-md-2"></div>
+		</div>
+		<div class="row text-center">
+			<div class="col-lg-2 col-md-2"></div>
+			<div class="col-lg-8 col-md-8 mt-5 mb-5">	
+				<input type="submit" name="submit" onclick="myFuction()" class="bg-success border-0 text-white"><br><br>
+			</div>
+			<div class="col-lg-2 col-md-2"></div>
+		</div>
+	</div>
+	</div>
+	<div class="container imag mt-5">
+	<div class="container text-white">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 text-center mt-5">
+				<h3>USING FOR LOOP</h3>
+			</div>
+		</div>
+		<div class="row">
+		<div class="col-lg-1 col-md-1"></div>
+		<div class="col-lg-4 col-md-4 mt-5">
+			<b>first Number:</b>
+		
+			<input type="Number" name="first Number" id="firstnum">
+		</div>
+		<div class="col-lg-4 col-md-4 mt-5">
+			<b>Last Number:</b>
+		
+			<input type="Number" name="last Number" id="lastnum">
+		</div>
+		<div class="col-lg-1 col-md-1"></div>
+	</div>
+	<div class="row">
+		<div class="col-lg-1 col-md-1"></div>
+		<div class="col-lg-8 col-md-8 text-center mt-5 mb-5">
+			<input type="submit" name="button" value="Click" onclick="numbers()" class="bg-success border-0 text-white"><br><br>
+			<p id="idea"></p>
+			<div class="col-lg-1 col-md-1"></div>
+		</div>
+	</div>
+	</div>
+</div>
+<div class="container imagee mt-5">
+	<div class="container text-white">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 text-center mt-5">
+				<h3>USING WHILE LOOP</h3>
+			</div>
+		</div>
+		<div class="row">
+		<div class="col-lg-1 col-md-1"></div>
+		<div class="col-lg-4 col-md-4 mt-5">
+			<b>first Number:</b>
+			<input type="Number" name="first " id="first">
+		</div>
+			<div class="col-lg-4 col-md-4 mt-5">
+			<b>Last Number:</b>
+			<input type="Number" name="last" id="last">
+			<div class="col-lg-1 col-md-1"></div>
+		</div>
+		</div>
+		<div class="row">
+		<div class="col-lg-1 col-md-1"></div>
+		<div class="col-lg-8 col-md-8 text-center mt-5 mb-5">
+			<input type="submit" name="button"  onclick="whileuse()"class="bg-success border-0 text-white"><br><br>
+			<p id="num"></p>
+		</div>
+	</div>
+	</div>
+	</div>
+	<div class="container mt-5 mb-5 image">
+	<div class="container text-white">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 text-center mt-5">
+				<h3>USING SWITCH LOOP</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-2 col-md-2"></div>
+			<div class="col-lg-8 col-md-8 text-center mt-5 mb-5">
+				<input type="submit" value="click Here" onclick="myDay()" class="bg-danger border-0 text-white"><br><br>
+				<p id="date"></p>
+			</div>
+			<div class="col-lg-2 col-md-2"></div>
+		</div>
+	</div>
+</div>
+</div>
+</body>
+<script>
+	function myFuction() {
+		var password = document.getElementById('Password').value;
+		var conformPassword = document.getElementById('ConformPassword').value;
+
+		if (password == conformPassword) {
+			alert("Login Success")
+		}
+		else{
+			alert("Login Falied")
+		}
+	}
+	function numbers() {
+		var num1 = document.getElementById('firstnum').value;
+		var num2 = document.getElementById('lastnum').value;
+		var text = "";
+		var i;
+		for ( i = num1; i <= num2; i++) {
+			text += i +"<br>";
+					}
+		document.getElementById('idea').innerHTML = text;
+	}
+	function whileuse() {
+		var firstnum = document.getElementById('first').value;
+		var lastnum = document.getElementById('last').value;
+		var name ="";
+		var i=firstnum;
+		while(i<= lastnum){
+			name += i +"<br>";
+			i++;
+		}
+		document.getElementById('num').innerHTML=name;
+	}
+	function myDay() {
+		var day ;
+		switch (new Date().getDay()){
+			case 0: 
+			day = "Sunday";
+			break;
+			case 1: 
+			day = "Monday";
+			break;
+			case 2: 
+			day = "tuesday";
+			break;
+			case 3: 
+			day = "Wednesday";
+			break;
+			case 4: 
+			day = "Thersday";
+			break;
+			case 5: 
+			day = "Friday";
+			break;
+			case 6: 
+			day = "Saturday";
+	
+		}
+		document.getElementById('date').innerHTML = "<h5>Today is " + day +"</h5>";
+	}
+</script>
+</html>
