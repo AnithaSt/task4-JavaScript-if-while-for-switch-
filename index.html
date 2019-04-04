@@ -156,12 +156,20 @@
 	function myFuction() {
 		var password = document.getElementById('Password').value;
 		var conformPassword = document.getElementById('ConformPassword').value;
-
-		if (password == conformPassword) {
+         if(password==''){
+         	alert('enter the Password')
+         }
+         	if(conformPassword==''){
+             alert('enter the conformPassword')
+         }
+         if(password=='' && conformPassword=='') {
+         	alert('password is empty')
+         }
+		else if(password == conformPassword) {
 			alert("Login Success")
 		}
 		else{
-			alert("Login Falied")
+			alert("Incorrect Password")
 		}
 	}
 	function numbers() {
